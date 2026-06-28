@@ -1,0 +1,11 @@
+{
+  "title": "All Resources",
+  "pages": [
+    "---Resources---",
+    "!index",
+    "!favorites",
+    "...",
+    "---Contribute---",
+    "contribution-guide"
+  ]
+}

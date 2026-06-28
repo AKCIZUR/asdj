@@ -1,0 +1,79 @@
+---
+title: Functions
+description: Understand how to create and use functions in JavaScript.
+---
+
+## Introduction
+
+A JavaScript function is a block of code designed to perform a particular task.
+
+There are two kinds of functions in JavaScript: **built-in** and **developer created**.
+
+Some examples of built-in JavaScript functions include: `concat()`, `date()`, `length()` etc.
+
+A JavaScript function is executed when "something" invokes or calls it.
+
+## Calling a Function
+
+The code inside a function will execute when something invokes or calls the function.
+  - When an event occurs (ex. when a user clicks a button)
+  - When it is called from JavaScript code
+
+## Function Example
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="myFunction()">Call Function</button>
+    <script>
+      function myFunction() {
+        window.alert("Hello World!");
+      }
+    </script>
+  </body>
+</html>
+```
+
+## Function Syntax
+
+- A JavaScript function is defined with the function **keyword**, followed by a **name**, then followed by **parentheses ()**.
+
+- Function names can contain letters, digits, underscores, and dollar signs.
+
+- The parentheses may include parameter names separated by commas.
+  - (parameter1, parameter2, ....)
+
+- The code to be executed, by the function, is placed inside curly brackets {}.
+
+```js
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+```
+
+- Function parameters are listed inside the **parentheses ()** in the function definition.
+
+- Function **arguments** are the **values received** by the function when it is called.
+
+- Inside the function, the **arguments** (parameters) behave as local variables.
+
+- Outputs of the operations done using parameters are sent back to the program using the return statement.
+
+### Function With Paramter and Return
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+    <script text="text/javascript">
+      function product(num1, num2) {
+        return num1 * num2;
+      }
+      document.getElementById("demo").innerHTML = "The return value for function is " + product(12, 3);
+    </script>
+  </body>
+</html>
+```
+
